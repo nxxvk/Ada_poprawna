@@ -25,7 +25,7 @@ package body Robot is
          Kontroler.Monitor.Aktualizuj_Stan_Robota(Id, Kontroler.W_Trasie);
          Put_Line("[ROBOT] R" & Integer'Image(Id) & " jedzie do magazynu...");
          
-         -- Implementacja Modułu D - Awarie robotów
+         
          if Losowanie_Awarii.Random(Gen_Awarii) = 1 then
             Kontroler.Monitor.Aktualizuj_Stan_Robota(Id, Kontroler.Naprawa);
             Put_Line("[ROBOT] R" & Integer'Image(Id) & " ulegl AWARII! Oczekuje na naprawe...");
